@@ -20,12 +20,25 @@ a {
   text-decoration: none;
   color: #373358;
 }
+
 .calculator-grid {
   display: grid;
   margin-top: 2rem;
   grid-template-columns: repeat(4, 6rem);
   grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);
   justify-content: center;
+}
+.calculator-grid button {
+  cursor: pointer;
+  font-size: 30px;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.calculator-grid button:hover,
+.calculator-grid button:focus {
+  background-color: rgba(111, 105, 172, 0.5);
 }
 
 .space-between-buttons {
@@ -52,17 +65,4 @@ a {
 .output .current-operand {
   color: white;
   font-size: 30px;
-}
-
-.calculator-grid button {
-  cursor: pointer;
-  font-size: 30px;
-  border: 1px solid white;
-  outline: none;
-  background-color: rgba(255, 255, 255, 0.75);
-}
-
-.calculator-grid button:hover,
-.calculator-grid button:focus {
-  background-color: rgba(111, 105, 172, 0.5);
 }
