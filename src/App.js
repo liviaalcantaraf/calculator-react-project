@@ -13,6 +13,8 @@ export const ACTIONS = {
 
 function reducer(state, { type, payload }) {
   switch (type) {
+    default:
+      break;
     case ACTIONS.ADD_DIGIT:
       if (state.overwrite) {
         return {
@@ -103,6 +105,9 @@ function evaluate({ currentOperand, previousOperand, operation }) {
   if (isNaN(prev) || isNaN(current)) return "";
   let computation = "";
   switch (operation) {
+    default:
+      break;
+
     case "+":
       computation = prev + current;
       break;
