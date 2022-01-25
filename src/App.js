@@ -154,7 +154,7 @@ function App() {
           {" "}
           AC
         </button>
-        <button onClicn-twok={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}>
+        <button onClick={() => dispatch({ type: ACTIONS.DELETE_DIGIT })}>
           DEL
         </button>
         <OperationButton operation="÷" dispatch={dispatch} />
